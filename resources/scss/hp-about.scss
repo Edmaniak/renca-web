@@ -1,0 +1,9 @@
+.about {
+    position: relative;
+    z-index: 10;
+    #cloud-1 {
+        right: 0;
+        top: 50%;
+        transform: translateX(50%);
+    }
+}
