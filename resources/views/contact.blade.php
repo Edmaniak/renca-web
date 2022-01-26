@@ -66,5 +66,6 @@
                 </div>
             </div>
         </section>
+        @include('contactForm')
     </main>
 @endsection

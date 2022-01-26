@@ -89,5 +89,5 @@
             @endforeach
         </div>
     </div>
-    <div class="contact-form"></div>
+    @include('contactForm')
 @endsection

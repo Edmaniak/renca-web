@@ -31,3 +31,5 @@ Route::get('/spoluprace/{id}', [ContentController::class, 'coop']);
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
+
+Route::post('/send', [ContentController::class, 'sendMail']);

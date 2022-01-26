@@ -8,7 +8,9 @@ use App\Course;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
+use Illuminate\Http\Request;
 use Illuminate\Routing\Controller as BaseController;
+use Illuminate\Support\Facades\Mail;
 
 class ContentController extends Controller
 {
@@ -50,5 +52,17 @@ class ContentController extends Controller
     {
         $coop = Cooperation::find($id);
         return view('detail')->with(['article' => $coop]);
+    }
+
+    public function sendMail(Request $request)
+    {
+        $to_name = 'Renata Kolaciová';
+        $to_email = 'renata.kolaciova@gmail.com';
+        $data = [];
+        Mail::send("emails.mail", $request->toArray(), function ($message) use ($to_name, $to_email) {
+            $message->to($to_email, $to_name)
+                ->subject("Zpráva z kontaktního formuláře uporodniasistentky.cz");
+            $message->from('uporodniasistentky@test.cz');
+        });
     }
 }

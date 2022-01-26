@@ -20,10 +20,24 @@ html, body {
     > div {
         width: 48px;
         height: 3px;
+        transition: all 0.2s;
         background: #FFFFFF;
     }
     @media (max-width: 992px) {
         display: flex;
+    }
+    &.opened {
+        > div {
+            &:nth-child(1) {
+                transform: translateY(15px) translateX(0) rotate(45deg);
+            }
+            &:nth-child(2) {
+                display: none;
+            }
+            &:nth-child(3) {
+                transform: translateY(-11px) translateX(0) rotate(-45deg);
+            }
+        }
     }
 }
 
@@ -232,7 +246,7 @@ a {
         &.opened {
             position: fixed;
             z-index: -1;
-            margin-top: 7vh;
+            margin-top: 11vw;
             height: auto;
             padding: 24px 0;
             padding-top: 48px;
@@ -243,7 +257,7 @@ a {
             left: 0;
             width: 100vw;
             li {
-                padding: 5px 0;
+                padding: 15px 0;
                 a {
                     font-size: 20px;
                 }
@@ -276,6 +290,9 @@ button {
         &:hover {
             background: lighten($blue, 10%);
         }
+    }
+    &.gradient {
+        background: linear-gradient(0deg, $purple, $blue);
     }
 }
 
@@ -370,5 +387,53 @@ section {
 
     &.lg {
         width: 550px;
+    }
+}
+
+label {
+    display: block;
+    font-family: "Maven Pro";
+    font-weight: 600;
+    color: $dark-purple;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.form-field {
+    margin-bottom: 24px;
+    width: 100%;
+}
+
+input {
+    background: $light-blue;
+    color: $dark-purple;
+    padding: 15px 30px;
+    font-family: "Maven Pro";
+    font-weight: 400;
+    font-size: 20px;
+    border-radius: 100px;
+    display: block;
+    border: none;
+    width: 100%;
+    max-width: unset;
+    &:focus {
+        border: solid $dark-purple 2px;
+        outline: none;
+    }
+}
+
+textarea {
+    border: none;
+    resize: none;
+    background: $light-blue;
+    color: $dark-purple;
+    font-weight: 400;
+    padding: 15px 30px;
+    height: 200px;
+    font-size: 20px;
+    width: 100%;
+    border-radius: 12px;
+    &:focus {
+        outline: none;
+        border: solid $dark-purple 2px;
     }
 }

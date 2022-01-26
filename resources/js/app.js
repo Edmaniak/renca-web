@@ -1,8 +1,10 @@
 import $ from 'jquery'
+import axios from 'axios'
 
 const header = $('header')
 const menu = $('.menu')
 const isHomepage = $('.top .hk').length > 0
+const hamburger = $('.hamburger')
 
 $(document).ready(function () {
     if (isHomepage) {
@@ -32,11 +34,25 @@ $(document).ready(function () {
         })
     }
 
-    $('.hamburger').click(function () {
-        if (!menu.hasClass('opened'))
-            $(menu).addClass('opened')
-        else
-            $(menu).removeClass('opened')
+    hamburger.click(function () {
+        if (!menu.hasClass('opened')){
+            menu.addClass('opened')
+            hamburger.addClass('opened')
+        } else {
+            menu.removeClass('opened')
+            hamburger.removeClass('opened')
+        }
+    })
+
+    $('form.contact-form').submit(function (e) {
+        e.preventDefault()
+        const data = {
+            name: $('[name="name"]').val(),
+            telephone: $('[name="telephone"]').val(),
+            email: $('[name="email"]').val(),
+            message: $('[name="message"]').val(),
+        }
+        axios.post('/send', data)
     })
 
 })
