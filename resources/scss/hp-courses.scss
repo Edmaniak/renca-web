@@ -11,14 +11,21 @@
         margin-bottom: 24px;
     }
 
-
-
     button {
         margin-top: 12px;
     }
 
     .price {
         margin: 24px 0;
+    }
+    p {
+        margin-bottom: 0;
+    }
+    @media (max-width: 992px) {
+        .price {
+            margin: 12px 0;
+        }
+        margin-bottom: 48px;
     }
 }
 
@@ -44,6 +51,9 @@
             transform: rotate(180deg) translateY(-100%);
             bottom: -100px;
             top: unset;
+        }
+        @media (max-width: 768px) {
+            display: none;
         }
     }
 }
