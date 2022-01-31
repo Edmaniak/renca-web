@@ -21,8 +21,8 @@
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <defs>
             <linearGradient id="myGradient" gradientTransform="rotate(90)">
-                <stop offset="0%" stop-color="#905ad8"/>
-                <stop offset="100%" stop-color="#4d91f2"/>
+                <stop offset="0%" stop-color="#d293b6"/>
+                <stop offset="100%" stop-color="#f7e7f0"/>
             </linearGradient>
         </defs>
         <path fill="url('#myGradient')" fill-opacity="1"
@@ -55,21 +55,21 @@
 @yield('content')
 <footer>
     <svg class="wave" id="wave-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#acb2ef" fill-opacity="1"
+        <path fill="#d293b6" fill-opacity="1"
               d="M0,128L60,112C120,96,240,64,360,74.7C480,85,600,139,720,170.7C840,203,960,213,1080,202.7C1200,192,1320,160,1380,144L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
     </svg>
     <svg class="wave" id="wave-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#8a8ee8" fill-opacity="1"
+        <path fill="#e3c6d7" fill-opacity="1"
               d="M0,128L60,112C120,96,240,64,360,74.7C480,85,600,139,720,170.7C840,203,960,213,1080,202.7C1200,192,1320,160,1380,144L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
     </svg>
     <svg class="wave" id="wave-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <defs>
-            <linearGradient id="myGradient" gradientTransform="rotate(90)">
-                <stop offset="0%" stop-color="#4d91f2"/>
-                <stop offset="100%" stop-color="#905ad8"/>
+            <linearGradient id="myGradient2" gradientTransform="rotate(90)">
+                <stop offset="0%" stop-color="#f7e7f0"/>
+                <stop offset="100%" stop-color="#d293b6"/>
             </linearGradient>
         </defs>
-        <path fill="url('#myGradient')" fill-opacity="1"
+        <path fill="url('#myGradient2')" fill-opacity="1"
               d="M0,128L60,112C120,96,240,64,360,74.7C480,85,600,139,720,170.7C840,203,960,213,1080,202.7C1200,192,1320,160,1380,144L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
     </svg>
     <div class="container">
@@ -79,10 +79,10 @@
                 <strong>E-mail: </strong><a href="#">renata.kolaciova@gmail.com</a>
             </div>
             <div>
-                <strong>Telefon: </strong><a href="#">773485291</a>
+                <strong>Telefon 1: </strong><a href="tel:+420603701417">+420 603 701 417</a>
             </div>
             <div>
-                <strong>Telefon: </strong><a href="#">773485291</a>
+                <strong>Telefon 2: </strong><a href="tel:+420723996072" >+420 723 996 072</a>
             </div>
         </div>
         <div class="right">

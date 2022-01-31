@@ -1,4 +1,8 @@
 .detail {
+    min-height: 50vh;
+    section {
+        margin-bottom: 120px;
+    }
     ul {
         line-height: 2em;
         font-size: 22px;
@@ -9,7 +13,6 @@
         }
     }
     .article {
-        min-height: 50vh;
         h1, h2, h3, h4, h5 {
             font-family: 'Maven Pro';
             margin-bottom: 0.25em;
@@ -40,5 +43,65 @@
             }
         }
     }
+}
+.about-detail {
+    padding-bottom: 240px;
+}
 
+.lector-card {
+    p, ul, li, strong {
+        text-align: left;
+    }
+    .img {
+        margin: 0 auto;
+        position: relative;
+        margin-bottom: 24px;
+    }
+    h4 {
+        text-align: center;
+        margin: 48px 0;
+    }
+    strong {
+        color: $dark-purple;
+        font-size: 24px;
+        display: block;
+        margin: 24px 0;
+    }
+
+    a {
+        font-weight: 600;
+        font-size: 22px;
+        color: #d293b6;
+        text-decoration: none;
+    }
+    ul {
+        list-style: none; /* Remove default bullets */
+    }
+
+    li {
+        font-size: 24px;
+    }
+
+    ul li::before {
+        content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+        color: $blue; /* Change the color */
+        font-weight: bold; /* If you want it to be bold */
+        display: inline-block; /* Needed to add space between the bullet and the text */
+        width: 1em; /* Also needed for space (tweak if needed) */
+        margin-left: -1em; /* Also needed for space (tweak if needed) */
+    }
+
+    .img, img {
+        border-radius: 100%;
+        width: 300px;
+        height: 300px;
+    }
+    img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }

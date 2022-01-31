@@ -6,17 +6,24 @@
                 <h1>Kontakt</h1>
                 <h3>Zavolejte nám</h3>
                 <div class="row">
-                    @for($i = 0; $i < 2; $i++)
                         <div class="col-md-6">
                             <a href="tel:+420603701417" class="contact-card">
                                 <div class="img">
                                     <img src="img/img.png" alt="">
                                 </div>
-                                <h4>Renata Vašicová</h4>
+                                <h4>Bc. Renata Vašicová</h4>
                                 <p>+420 603 701 417</p>
                             </a>
                         </div>
-                    @endfor
+                    <div class="col-md-6">
+                        <a href="tel:+420723996072" class="contact-card">
+                            <div class="img">
+                                <img src="img/img.png" alt="">
+                            </div>
+                            <h4>Bc. Klára Hýsková</h4>
+                            <p>+420 723 996 072</p>
+                        </a>
+                    </div>
                 </div>
                 <div class="row email">
                     <div class="col-12">

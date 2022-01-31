@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Article;
 use App\Cooperation;
 use App\Course;
+use App\Employer;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
@@ -33,7 +34,8 @@ class ContentController extends Controller
     public function article($id)
     {
         $article = Article::find($id);
-        return view('detail')->with(['article' => $article]);
+        $employers = Employer::all();
+        return view('detail')->with(['article' => $article, 'employers' => $employers]);
     }
 
     public function courses()

@@ -211,7 +211,7 @@ a {
 }
 
 .menu {
-    background: linear-gradient(0deg, $purple, $blue);
+    background: linear-gradient(0deg, #d293b6, #f7e7f0);
     height: 60px;
     display: inline-flex;
     margin: 0;
@@ -219,7 +219,7 @@ a {
     overflow: hidden;
     padding: 0;
     border-radius: 200px;
-    box-shadow: 0 7px 14px 0 rgba(85, 52, 123, 1);
+    box-shadow: 0 7px 14px 0 rgb(178, 121, 153);
     list-style: none;
 
     li {
@@ -296,7 +296,7 @@ button {
         }
     }
     &.gradient {
-        background: linear-gradient(0deg, $purple, $blue);
+        background: linear-gradient(0deg, #e3c6d7, #d293b6);
     }
 }
 
@@ -343,7 +343,7 @@ h3 {
     font-family: 'Pacifico';
     color: $blue;
     font-size: 32px;
-    margin-bottom: 120px;
+    margin-bottom: 60px;
     @media (max-width: 1200px) {
         font-size: 28px;
         margin-bottom: 90px;
@@ -422,7 +422,7 @@ label {
 }
 
 input {
-    background: $light-blue;
+    background: #f7e7f0;
     color: $dark-purple;
     padding: 15px 30px;
     font-family: "Maven Pro";
@@ -442,7 +442,7 @@ input {
 textarea {
     border: none;
     resize: none;
-    background: $light-blue;
+    background: #f7e7f0;
     color: $dark-purple;
     font-weight: 400;
     padding: 15px 30px;

@@ -24,7 +24,7 @@ Route::get('/kontakt', function () {
 Route::get('/kurzy', [ContentController::class, 'courses']);
 Route::get('/kurzy/{id}', [ContentController::class, 'course']);
 
-Route::get('/clanky/{id}', [ContentController::class, 'article']);
+Route::get('/clanky/{id}', [ContentController::class, 'article'])->name('articles');
 Route::get('/spoluprace/{id}', [ContentController::class, 'coop']);
 
 
