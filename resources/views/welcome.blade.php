@@ -6,9 +6,11 @@
         <img id="cloud-3" class="cloud md" src="img/cloud.svg" alt="">
         <div class="container">
             <div class="title">
-                <h1>Předporodní kurzy</h1>
-                <h2>Lorem ipsum dolor sit.</h2>
-                <button>Dozvědět se více</button>
+                <h1>U porodní asistentky</h1>
+                <h2><span style="display: inline-block">Pečujte o sebe</span> <span style="display: inline-block">v těhotenství i po porodu</span></h2>
+                <a href="/kurzy">
+                    <button>Dozvědět se více</button>
+                </a>
             </div>
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">

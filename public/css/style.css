@@ -10561,7 +10561,7 @@ a {
   color: #FFFFFF;
 }
 .menu a:hover {
-  background: #55347b;
+  background: #7E4F69;
 }
 @media (max-width: 992px) {
   .menu {
@@ -10601,11 +10601,11 @@ button {
   font-size: 18px;
   cursor: pointer;
   padding: 10px 25px;
-  background: #55347b;
+  background: #724961;
   transition: all 0.2s;
 }
 button:hover {
-  background: #6e439f;
+  background: #9d6383;
 }
 button.blue {
   background: #d293b6;
@@ -10623,7 +10623,7 @@ main {
 main h1 {
   font-weight: 900;
   font-size: 96px;
-  color: #55347b;
+  color: #7E4F69;
 }
 @media (max-width: 1200px) {
   main h1 {
@@ -10652,7 +10652,7 @@ main h1 {
 h2 {
   font-weight: 900;
   font-size: 64px;
-  color: #55347b;
+  color: #7E4F69;
 }
 @media (max-width: 1200px) {
   h2 {
@@ -10675,7 +10675,7 @@ h3 {
 @media (max-width: 1200px) {
   h3 {
     font-size: 28px;
-    margin-bottom: 90px;
+    margin-bottom: 40px;
   }
 }
 @media (max-width: 768px) {
@@ -10691,7 +10691,7 @@ strong {
 }
 
 h4 {
-  color: #55347b;
+  color: #7E4F69;
   font-size: 28px;
   font-weight: 600;
   margin-bottom: 24px;
@@ -10745,7 +10745,7 @@ label {
   display: block;
   font-family: "Maven Pro";
   font-weight: 600;
-  color: #55347b;
+  color: #7E4F69;
   font-size: 20px;
   margin-bottom: 5px;
 }
@@ -10757,7 +10757,7 @@ label {
 
 input {
   background: #f7e7f0;
-  color: #55347b;
+  color: #7E4F69;
   padding: 15px 30px;
   font-family: "Maven Pro";
   font-weight: 400;
@@ -10769,7 +10769,7 @@ input {
   max-width: unset;
 }
 input:focus {
-  border: solid #55347b 2px;
+  border: solid #7E4F69 2px;
   outline: none;
 }
 
@@ -10777,7 +10777,7 @@ textarea {
   border: none;
   resize: none;
   background: #f7e7f0;
-  color: #55347b;
+  color: #7E4F69;
   font-weight: 400;
   padding: 15px 30px;
   height: 200px;
@@ -10787,7 +10787,7 @@ textarea {
 }
 textarea:focus {
   outline: none;
-  border: solid #55347b 2px;
+  border: solid #7E4F69 2px;
 }
 
 .top {
@@ -10814,7 +10814,7 @@ textarea:focus {
   position: absolute;
   left: 0;
   z-index: 0;
-  opacity: 0.25;
+  opacity: 0.5;
   bottom: 0;
   -o-object-fit: cover;
      object-fit: cover;
@@ -10839,8 +10839,20 @@ textarea:focus {
   font-weight: 900;
   font-size: 84px;
 }
+.top .title h2 {
+  max-width: 1000px;
+  font-size: 58px;
+}
 .top button {
   margin-top: 24px;
+}
+@media (max-width: 1400px) {
+  .top .title h1 {
+    font-size: 72px;
+  }
+  .top .title h2 {
+    font-size: 52px;
+  }
 }
 @media (max-width: 1750px) {
   .top #cloud-1, .top #cloud-2 {
@@ -11168,7 +11180,7 @@ textarea:focus {
 .detail .article h1, .detail .article h2, .detail .article h3, .detail .article h4, .detail .article h5 {
   font-family: "Maven Pro";
   margin-bottom: 0.25em;
-  color: #55347b;
+  color: #7E4F69;
 }
 .detail .article h1 {
   font-size: 56px;
@@ -11212,7 +11224,7 @@ textarea:focus {
   margin: 48px 0;
 }
 .lector-card strong {
-  color: #55347b;
+  color: #7E4F69;
   font-size: 24px;
   display: block;
   margin: 24px 0;
