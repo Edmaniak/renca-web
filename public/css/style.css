@@ -10797,6 +10797,19 @@ textarea:focus {
   color: #FFFFFF;
   background: linear-gradient(0deg, #f7e7f0, #d293b6);
 }
+.top .panna {
+  position: absolute;
+  z-index: 10;
+  width: 30%;
+  bottom: 0;
+  right: 10%;
+  max-width: 570px;
+}
+@media (max-width: 768px) {
+  .top .panna {
+    display: none;
+  }
+}
 .top #cloud-1 {
   left: 0;
   transform: translateX(-50%);
@@ -10827,7 +10840,7 @@ textarea:focus {
   position: absolute;
   bottom: -1px;
   left: 0;
-  z-index: 1;
+  z-index: 100;
 }
 .top .title {
   position: absolute;

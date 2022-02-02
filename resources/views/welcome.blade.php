@@ -3,7 +3,7 @@
     <div class="top">
         <img id="cloud-1" class="cloud xs" src="img/cloud.svg" alt="">
         <img id="cloud-2" class="cloud sm" src="img/cloud.svg" alt="">
-        <img id="cloud-3" class="cloud md" src="img/cloud.svg" alt="">
+        <img id="panna" class="panna" src="img/panna.svg" alt="">
         <div class="container">
             <div class="title">
                 <h1>U porodní asistentky</h1>
