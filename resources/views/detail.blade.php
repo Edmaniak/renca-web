@@ -12,7 +12,7 @@
                 <div class="article">
                     {!! $article['text'] !!}
                     @if($article['price'])
-                        <p class="price">{{$article['price']}}</p>
+                        <p class="price">Cena: {{$article['price']}}</p>
                     @endif
                 </div>
             </div>
