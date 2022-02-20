@@ -7,18 +7,20 @@
     .panna {
         position: absolute;
         z-index: 10;
-        width: 30%;
-        bottom: 0;
+        width: 32%;
+        bottom: 10%;
         right: 10%;
-        max-width: 570px;
         @media (max-width: 768px) {
             display: none;
         }
         @media (max-height: 1100px) {
-            width: 25%;
+            width: 35%;
+            bottom: 100px;
         }
         @media (max-height: 950px) {
-            right: 15%;
+            right: 12%;
+            width: 30%;
+            bottom: 70px;
         }
     }
 
