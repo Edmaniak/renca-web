@@ -1,4 +1,5 @@
 @extends('layout')
+<title>Předporodní kurzy - Kurzy</title>
 @section('content')
     <main class="courses">
         <section>

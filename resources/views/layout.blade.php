@@ -14,7 +14,7 @@
     <script src="https://kit.fontawesome.com/d881bdf81d.js" crossorigin="anonymous"></script>
     <script src="https://api.mapy.cz/loader.js"></script>
     <script>Loader.load()</script>
-    <title>Předporodní kurzy - Hradec Králové</title>
+    @yield('title')
     <meta name="csrf-token" content="{{ csrf_token() }}" />
 </head>
 <body>

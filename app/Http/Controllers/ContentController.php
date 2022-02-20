@@ -50,6 +50,11 @@ class ContentController extends Controller
         return view('detail')->with(['article' => $course]);
     }
 
+    public function contact() {
+        $employers = Employer::all();
+        return view('contact')->with(['employers' => $employers]);
+    }
+
     public function coop($id)
     {
         $coop = Cooperation::find($id);

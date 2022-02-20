@@ -1,4 +1,9 @@
 @extends('layout')
+@section('title')
+    <title>Předporodní kurzy - Hradec Králové</title>
+    <meta name="description"
+          content="Jsme dvě porodní asistentky a zároveň kamarádky, které pracují  na oddělení fyziologických novorozenců. Pokud zrovna nepomáháme čerstvým maminkám během prvních dnů v jejich  nové životní roli, zaměřujeme se na vzdělávání těhotných žen a maminek po porodu. Během naší  praxe se setkáváme s problémy, kterým by se dalo předejít dostatečnou a kvalitní přípravou již v těhotenství. Proto jsme pro vás připravily řadu kurzů a lekcí, které vám  pomohou v nesnadných  situacích, které mohou nastat.">
+@endsection
 @section('content')
     <div class="top">
         <img id="cloud-1" class="cloud xs" src="img/cloud.svg" alt="">
@@ -7,7 +12,8 @@
         <div class="container">
             <div class="title">
                 <h1>U porodní asistentky</h1>
-                <h2><span style="display: inline-block">Pečujte o sebe</span> <span style="display: inline-block">v těhotenství i po porodu</span></h2>
+                <h2><span style="display: inline-block">Pečujte o sebe</span> <span style="display: inline-block">v těhotenství i po porodu</span>
+                </h2>
                 <a href="/kurzy">
                     <button>Dozvědět se více</button>
                 </a>

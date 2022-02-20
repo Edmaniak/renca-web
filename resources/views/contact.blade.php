@@ -1,4 +1,5 @@
 @extends('layout')
+<title>Předporodní kurzy - Kontakt</title>
 @section('content')
     <main class="contact">
         <section>
@@ -6,24 +7,17 @@
                 <h1>Kontakt</h1>
                 <h3>Zavolejte nám</h3>
                 <div class="row">
+                    @foreach($employers as $e)
                         <div class="col-md-6">
-                            <a href="tel:+420603701417" class="contact-card">
+                            <a href="tel:{{$e['telephone']}}" class="contact-card">
                                 <div class="img">
-                                    <img src="img/img.png" alt="">
+                                    <img src="storage/{{$e['img']}}" alt="{{$e['name']}}">
                                 </div>
-                                <h4>Bc. Renata Vašicová</h4>
-                                <p>+420 603 701 417</p>
+                                <h4>{{$e['name']}}</h4>
+                                <p>{{$e['telephone']}}</p>
                             </a>
                         </div>
-                    <div class="col-md-6">
-                        <a href="tel:+420723996072" class="contact-card">
-                            <div class="img">
-                                <img src="img/img.png" alt="">
-                            </div>
-                            <h4>Bc. Klára Hýsková</h4>
-                            <p>+420 723 996 072</p>
-                        </a>
-                    </div>
+                    @endforeach
                 </div>
                 <div class="row email">
                     <div class="col-12">
@@ -45,7 +39,7 @@
                     <div class="col-md-4">
                         <h4>Nejbližší zastávky MHD</h4>
                         <p>Muzeum - 250m</p>
-                        <p>Centrál - 400m/9</p>
+                        <p>Centrál - 400m</p>
                         <p>Ulrichovo nám. - 450m</p>
                     </div>
                     <div class="col-md-4">

@@ -16,9 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [ContentController::class, 'welcome']);
 
-Route::get('/kontakt', function () {
-    return view('contact');
-});
+Route::get('/kontakt', [ContentController::class, 'contact']);
 
 
 Route::get('/kurzy', [ContentController::class, 'courses']);

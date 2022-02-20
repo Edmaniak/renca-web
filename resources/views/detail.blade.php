@@ -1,4 +1,8 @@
 @extends('layout')
+@section('title')
+    <title>Předporodní kurzy - Hradec Králové - {{$article['title']}}</title>
+    <meta name="description" content="{{$article['perex']}}">
+@endsection
 @section('content')
     <main class="detail">
         <section>
