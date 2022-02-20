@@ -76,7 +76,7 @@
         <div class="left">
             <h4>Kontakt</h4>
             <div>
-                <strong>E-mail: </strong><a href="#">renata.kolaciova@gmail.com</a>
+                <strong>E-mail: </strong><a href="mailto:uporodniasistentky@gmail.com">uporodniasistentky@gmail.com</a>
             </div>
             <div>
                 <strong>Telefon 1: </strong><a href="tel:+420603701417">+420 603 701 417</a>

@@ -42,7 +42,7 @@
             <h3>a jejich ceny</h3>
             <div class="row">
                 @foreach($courses as $course)
-                    <div class="col-md-{{12 / count($courses)}}">
+                    <div class="col-md-6">
                         <div class="course">
                             <a href="/kurzy/{{$course['id']}}">
                                 @if ($course['icon'])

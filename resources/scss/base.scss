@@ -47,7 +47,7 @@ header {
     margin-top: 48px;
     top: 0;
     width: 100vw;
-    z-index: 100;
+    z-index: 1000;
 
     &.scrolled {
         svg {
@@ -329,6 +329,8 @@ main {
 
 h2 {
     font-weight: 900;
+    position: relative;
+    z-index: 101;
     font-size: 64px;
     color: $dark-purple;
     @media (max-width: 1200px) {
@@ -343,6 +345,8 @@ h2 {
 h3 {
     font-family: 'Pacifico';
     color: $blue;
+    position: relative;
+    z-index: 101;
     font-size: 32px;
     margin-bottom: 60px;
     @media (max-width: 1200px) {

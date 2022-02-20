@@ -19,7 +19,7 @@ class ContentController extends Controller
 
     public function welcome()
     {
-        $courses = Course::all();
+        $courses = Course::where('published', true)->orderBy('order', 'DESC')->get();;
         $about = Article::find(self::ABOUT_ARTICLE_ID);
         $cooperations = Cooperation::all();
         return view('welcome')->with(
@@ -40,7 +40,7 @@ class ContentController extends Controller
 
     public function courses()
     {
-        $courses = Course::all();
+        $courses = Course::where('published', true)->orderBy('order', 'DESC')->get();
         return view('courses')->with(['courses' => $courses]);
     }
 

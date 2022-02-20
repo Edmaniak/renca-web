@@ -17,6 +17,9 @@
         @media (max-height: 1100px) {
             width: 25%;
         }
+        @media (max-height: 950px) {
+            right: 15%;
+        }
     }
 
     #cloud-1 {
@@ -53,6 +56,12 @@
         bottom: -1px;
         left: 0;
         z-index: 100;
+        @media (max-height: 900px) {
+            bottom: -60px;
+        }
+        @media (max-width: 500px) {
+            bottom: -1px;
+        }
     }
 
     .title {
@@ -67,22 +76,28 @@
 
         h2 {
             font-family: "Pacifico";
-            max-width: 900px;
-            line-height: 1.75em;
-            font-size: 58px;
+            max-width: 700px;
+            font-weight: 100;
+            line-height: 1.5em;
+            font-size: 52px;
         }
     }
 
     button {
         margin-top: 24px;
     }
-    @media (max-width: 1400px) {
+    @media (max-height: 950px) {
+        .title {
+            transform: translateY(-75%);
+        }
+    }
+    @media (max-width: 1700px) {
         .title {
             h1 {
                 font-size: 72px;
             }
             h2 {
-                font-size: 52px;
+                font-size: 48px;
             }
         }
     }
