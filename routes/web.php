@@ -32,4 +32,8 @@ Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
 
+Route::get('/phpinfo', function() {
+    return phpinfo();
+});
+
 Route::post('/send', [ContentController::class, 'sendMail']);
