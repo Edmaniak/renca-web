@@ -11257,6 +11257,11 @@ textarea:focus {
   margin-bottom: 0.25em;
   color: #7E4F69;
 }
+.detail .article .price {
+  font-size: 24px;
+  color: #7E4F69;
+  font-weight: bold;
+}
 .detail .article h1 {
   font-size: 56px;
 }

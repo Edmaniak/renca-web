@@ -11,6 +11,9 @@
                 <h3>{{$article['subtitle']}}</h3>
                 <div class="article">
                     {!! $article['text'] !!}
+                    @if($article['price'])
+                        <p class="price">{{$article['price']}}</p>
+                    @endif
                 </div>
             </div>
         </section>
