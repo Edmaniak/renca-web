@@ -11203,8 +11203,13 @@ textarea:focus {
 @media (max-width: 1200px) {
   .courses .course-card {
     flex-direction: column;
+  }
+  .courses .course-card .left {
     margin-right: 0;
     margin-left: 0;
+  }
+  .courses .course-card .img {
+    margin-bottom: 48px;
   }
   .courses .course-card:nth-child(2n) {
     flex-direction: column;
@@ -11217,6 +11222,9 @@ textarea:focus {
 @media (max-width: 768px) {
   .courses .course-card {
     margin-bottom: 48px;
+  }
+  .courses .course-card .img {
+    height: 300px;
   }
   .courses .course-card h3 {
     text-align: center;

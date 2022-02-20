@@ -18,7 +18,7 @@
                             <div class="col-md-6">
                                 <div class="lector-card">
                                     <div class="img">
-                                        <img src="{{$e['img']}}" alt="{{$e['name']}}">
+                                        <img src="storage/{{$e['img']}}" alt="{{$e['name']}}">
                                     </div>
                                     <h4>{{$e['name']}}</h4>
                                     <p>{!!$e['introduction']!!}</p>

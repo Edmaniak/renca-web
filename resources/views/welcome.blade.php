@@ -76,7 +76,7 @@
                             @if(!$coop['img'])
                                 <img src="img/img.png" alt="{{$coop['name']}}">
                             @else
-                                <img src="{{$coop['img']}}" alt="{{$coop['name']}}">
+                                <img src="storage/{{$coop['img']}}" alt="{{$coop['name']}}">
                             @endif
                         </a>
                     </div>

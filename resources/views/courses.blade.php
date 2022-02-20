@@ -10,7 +10,7 @@
                         <div class="left">
                             <div class="img">
                                 <a href="/kurzy/{{$course['id']}}">
-                                    <img src="{{$course['img']}}" alt="{{$course['title']}}">
+                                    <img src="storage/{{$course['img']}}" alt="{{$course['title']}}">
                                 </a>
                             </div>
                         </div>
