@@ -84,6 +84,17 @@
     }
 }
 
+.contact-form-send {
+    display: none;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    color: $dark-purple;
+    @media (max-width: 720px){
+        font-size: 28px;
+    }
+}
+
 .contact-form {
     h2 {
         margin-bottom: 5px;

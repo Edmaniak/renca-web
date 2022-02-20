@@ -15,6 +15,7 @@
     <script src="https://api.mapy.cz/loader.js"></script>
     <script>Loader.load()</script>
     <title>Předporodní kurzy - Hradec Králové</title>
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
 </head>
 <body>
 <header>

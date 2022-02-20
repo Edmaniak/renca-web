@@ -9,19 +9,22 @@
             </div>
             <div class="form-field">
                 <label for="telephone">Váš telefon</label>
-                <input type="tel" name="telephone" id="telephone">
+                <input required type="tel" name="telephone" id="telephone">
             </div>
             <div class="form-field">
                 <label for="telephone">Váš e-mail</label>
-                <input type="email" name="email" id="email">
+                <input required type="email" name="email" id="email">
             </div>
             <div class="form-field">
                 <label for="message">Vaše zpráva</label>
-                <textarea name="message" id="message"></textarea>
+                <textarea required name="message" id="message"></textarea>
             </div>
             <div class="form-field submit-form" style="text-align: center">
-                <button class="gradient" type="submit">Odeslat zprávu</button>
+                <button class="gradient submit-button" type="submit">Odeslat zprávu</button>
             </div>
         </form>
     </div>
+</section>
+<section class="contact-form-send">
+    Zpráva byla úspěšně odeslána.
 </section>

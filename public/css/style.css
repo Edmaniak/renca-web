@@ -10378,6 +10378,11 @@ html, body {
   transform: translateY(-11px) translateX(0) rotate(-45deg);
 }
 
+.err {
+  color: #c74e4e;
+  font-weight: bold;
+}
+
 header {
   position: fixed;
   left: 0;
@@ -11117,6 +11122,19 @@ textarea:focus {
   }
   .contact .col-md-4, .contact .col-md-6 {
     margin-top: 24px;
+  }
+}
+
+.contact-form-send {
+  display: none;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  color: #7E4F69;
+}
+@media (max-width: 720px) {
+  .contact-form-send {
+    font-size: 28px;
   }
 }
 

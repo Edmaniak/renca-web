@@ -3,4 +3,4 @@
 <p><strong>Telefon: </strong> <span>{{$telephone}}</span></p>
 <p><strong>Email: </strong> <span>{{$email}}</span></p>
 <p><strong>Zpráva: </strong></p>
-<p>{{$message}}</p>
+<p>{{$msg}}</p>

@@ -59,12 +59,14 @@ class ContentController extends Controller
     public function sendMail(Request $request)
     {
         $to_name = 'Renata Kolaciová';
-        $to_email = 'renata.kolaciova@gmail.com';
+        $to_email = 'uporodniasistentky@gmail.com';
+        $from_email = $request->email;
         $data = [];
-        Mail::send("emails.mail", $request->toArray(), function ($message) use ($to_name, $to_email) {
+        Mail::send("emails.mail", $request->toArray(), function ($message) use ($to_name, $to_email, $from_email) {
             $message->to($to_email, $to_name)
                 ->subject("Zpráva z kontaktního formuláře uporodniasistentky.cz");
-            $message->from('uporodniasistentky@test.cz');
+            $message->from($from_email);
+            $message->replyTo($from_email);
         });
     }
 }
